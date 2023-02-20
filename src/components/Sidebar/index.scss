@@ -1,0 +1,67 @@
+:root {
+    --navBg: #060b26;
+}
+
+.sidebar {
+    z-index: 2000;
+    width: 80px;
+    background-image: linear-gradient(120deg, rgb(233, 111, 80), rgb(196, 53, 55));
+    height: 100vh;
+    position: fixed;
+    transition: 0.3s ease;
+}
+
+.sidebar-open {
+    z-index: 2000;
+    width: 300px;
+    background-image: linear-gradient(120deg, rgb(233, 111, 80), rgb(196, 53, 55));
+    height: 100vh;
+    position: fixed;
+    transition: 0.3s ease;
+}
+
+.sidebar ul {
+    display: none;
+}
+
+.sidebar-open ul {
+    display: block;
+}
+
+.sidebar-menu-icon {
+    display: block;
+    margin: auto;
+
+    width: 30px;
+    height: 30px;
+    color: white;
+    padding-top: 70px;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.sidebar-menu li {
+    list-style-type: none;
+    padding: 10px 0px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sidebar-menu li Link {
+    color: white !important;
+}
+
+.sidebar-menu li:hover {
+    background-color: wheat;
+    color: #060b26;
+}

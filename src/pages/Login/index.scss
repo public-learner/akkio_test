@@ -1,0 +1,21 @@
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    h1 {
+        font-size: 8vh;
+        letter-spacing: 5px;
+        color: rgb(232, 102, 62);
+        margin-bottom: 30px;
+        margin-top: 0;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .login-form-google-btn {
+        font-family: "Quicksand" !important;
+        font-size: 20px !important;
+    }
+}

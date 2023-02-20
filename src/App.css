@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  font-family: "Quicksand";
+  font-size: 25px;
+  color: #7A7A7A;
 }
 
 .App-logo {
@@ -36,3 +38,16 @@
     transform: rotate(360deg);
   }
 }
+
+.body {
+  margin-left: 80px;
+  background-color: rgb(245, 244, 244);
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "Quicksand";   /*Can be any text*/
+  src: local("Quicksand-VariableFont_wght"),
+    url("./assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
