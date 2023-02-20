@@ -13,11 +13,10 @@ import FadeIn from "react-fade-in/lib/FadeIn";
 
 import "react-appear-on-scroll/dist/index.css";
 
-import {
-  AppearingContainer,
-  AppearSequentialContainer,
-} from "react-appear-on-scroll";
-import "react-appear-on-scroll/dist/index.css";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import ScrollAnimation from "react-animate-on-scroll";
+
 
 // import ScrollAnimate from "react-scroll-fade-animation";
 
@@ -33,7 +32,7 @@ const LeftPane = memo(({updateSkinGoals, getSkinGoals}) => {
   let QuizPane = () => {
     return (
       <FadeIn transitionDuration={500} delay={600}>
-          {QuizData.map((quizData, index) => (
+        {QuizData.map((quizData, index) => (
             <Quiz
               key={index}
               quizIndex={index}
@@ -41,14 +40,14 @@ const LeftPane = memo(({updateSkinGoals, getSkinGoals}) => {
               data={quizData}
               updateSkinGoals={updateSkinGoals}
             />
-          ))}
-          <div className="left-pane-footer">
-            <img className="logo-icon" src={logo_icon} alt="Logo" />
-            <span>Nicely done! We are almost finished.</span>
-          </div>
-          <div className="btn" onClick={() => showRecommendedProducts()}>
-            See my matches
-          </div>
+        ))}
+        <div className="left-pane-footer">
+          <img className="logo-icon" src={logo_icon} alt="Logo" />
+          <span>Nicely done! We are almost finished.</span>
+        </div>
+        <div className="btn" onClick={() => showRecommendedProducts()}>
+          See my matches
+        </div>
       </FadeIn>
     );
   };
